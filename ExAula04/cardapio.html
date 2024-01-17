@@ -1,0 +1,105 @@
+<!-- Atividade de Fixação 03:
+- Fazer um cardápio/catálogo digital;
+- Todo produto deste cardápio/catálogo deve possuir uma imagem, um nome e uma descrição;
+- É necessário possuir navegação entre as páginas;
+- Deve existir uma tabela de preços (ou com qualquer outra função) na página;
+- Deve possuir um formulário para cadastro;
+- A página deve possuir alguma estilização; -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio</title>
+
+    <link rel="stylesheet" TYPE="text/css" href="styles.css"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <section>
+        <img src="img/logoMini.png" alt="Logo Casa della Nonna" title="Casa della Nonna" width="270px"/>
+      </section>
+      <section>  
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="/ExAula04/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/ExAula04/cardapio.html">Cardápio</a>
+                </li>
+                <li>
+                  <a href="/ExAula04/formulario.html">Quero pedir</a>
+                </li>
+            </ul>
+        </nav>
+      </section>     
+    </header>
+    <br>
+    <br>
+    <main>
+        <section>
+            <div class="sabores">
+              <button><a href="/ExAula04/calabresa.html"><img src="/ExAula04/img/calabresa.png" width="200px" heigth="200px" /></a><br><br>Pizza de Calabresa</button>
+            </div>
+            <div class="sabores">
+              <button><a href="/ExAula04/marguerita.html"><img src="/ExAula04/img/marguerita.png" width="200px" heigth="200px"/></a><br><br> Pizza Marguerita</button>
+            </div>
+            <div class="sabores">
+              <button><a href="/ExAula04/mussarela.html"><img src="/ExAula04/img/mussarela.png" width="200px" heigth="200px"/></a><br><br> Pizza de Mussarela</button>
+            </div>
+            <div class="sabores">
+              <button><a href="/ExAula04/vegetariana.html"><img src="/ExAula04/img/vegetariana.png" width="200px" heigth="200px"/></a><br><br> Pizza Vegetariana</button>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Tamanho</th>
+                <th>Pizza de Calabresa</th>
+                <th>Pizza Marguerita</th>
+                <th>Pizza Mussarela</th>
+                <th>Pizza Vegetariana</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>P</td>
+                <td><s>R$ 42,90</s><br>R$ 32,90</td>
+                <td><s>R$ 39,90</s><br>R$ 29,90</td>
+                <td><s>R$ 35,90</s><br>R$ 25,90</td>
+                <td><s>R$ 39,90</s><br>R$ 29,90</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td><s>R$ 62,90</s><br>R$ 52,90</td>
+                <td><s>R$ 59,90</s><br>R$ 49,90</td>
+                <td><s>R$ 55,90</s><br>R$ 45,90</td>
+                <td><s>R$ 59,90</s><br>R$ 49,90</td>
+              </tr>
+              <tr>
+                <td>G</td>
+                <td><s>R$ 72,90</s><br>R$ 62,90</td>
+                <td><s>R$ 69,90</s><br>R$ 59,90</td>
+                <td><s>R$ 65,90</s><br>R$ 55,90</td>
+                <td><s>R$ 69,90</s><br>R$ 59,90</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+    </main>
+    <br>
+    <br> 
+    <footer>
+      <h6>©️ Andrezza Abreu 2024</h6>
+    </footer>
+</body>
+</html>
