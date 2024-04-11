@@ -33,36 +33,6 @@ function salvarPasso02() {
     salvarDadosLocalStorage(dadosPasso02);
 }
 
-/*
-
-function salvarPasso01() {
-    // Obter os valores dos campos
-    const homens = document.getElementById('homens').value;
-    const mulheres = document.getElementById('mulheres').value;
-    const criancas = document.getElementById('criancas').value;
-    const adultosBebem = document.getElementById('adultosBebem').value;
-
-    // Salvar os valores no armazenamento local
-    localStorage.setItem('homens', homens);
-    localStorage.setItem('mulheres', mulheres);
-    localStorage.setItem('criancas', criancas);
-    localStorage.setItem('adultosBebem', adultosBebem);
-};
-
-function salvarPasso02() {
-    // Obter os valores dos campos
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const cep = document.getElementById('cep').value;
-
-    // Salvar os valores no armazenamento local
-    localStorage.setItem('nome', nome);
-    localStorage.setItem('email', email);
-    localStorage.setItem('cep', cep);
-};
-
-*/
-
 // Função para carregar os dados do armazenamento local
 function carregarDadosPasso01() {
     // Verificar se os dados estão armazenados localmente
