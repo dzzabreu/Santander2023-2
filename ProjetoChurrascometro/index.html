@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="mb-2">
+        <button id="toggleTheme" class="button">Tema Escuro</button>
+        <h1>Churrascômetro</h1>
+    </header>
+    <main>
+        <div id="passo-1" class="my-2 secao">
+            <!-- Conteúdo do primeiro passo (nome, e-mail, CEP, checkbox)-->
+            <section class="textoIntro">
+                <p>Precisa de uma ajudinha com o churrasco? :)</p>
+                <p>Quantas pessoas vão participar?</p>
+            </section>
+
+            <section class="my-4 flex flex-direction-row justify-space-between">
+                <div>
+                    <label for="homens">Homens</label>
+                    <input type="number" id="homens" name="homens" min="0">
+                </div>
+                <div>
+                    <label for="mulheres">Mulheres</label>
+                    <input type="number" id="mulheres" name="mulheres" min="0">
+                </div>
+                <div>
+                    <label for="criancas">Crianças</label>
+                    <input type="number" id="criancas" name="criancas" min="0">
+                </div>
+                <div>
+                    <label for="adultosBebem">Adultos que bebem</label>
+                    <input type="number" id="adultosBebem" name="adultosBebem" min="0">
+                </div>
+            </section>
+            <section class="flex justify-center align-items-center">
+                <button class="button"><a href="#passo-2">Calcular</a></button>
+            </section>
+        </div>
+
+        <div id="passo-2" class="my-2 secao ocultaSecao">
+            <!-- Conteúdo do segundo passo (quantidade de pessoas) -->
+            <section class="textoIntro">
+                <p>Fique por dentro de todas as novidades.</p>
+                <p>Cadastre seu email e receba promoções especiais!</p>
+            </section>
+
+            <section class="my-2 flex justify-center align-items-center">
+                <form id="formCadastro">
+                    <div class="flex flex-direction-column">
+                        <label for="nome"></label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                        <label for="email"></label>
+                        <input type="email" id="email" class="my-2" name="email" placeholder="Digite seu email" required>
+
+                        <label for="cep"></label>
+                        <input type="text" id="cep" name="cep" placeholder="Digite seu CEP." maxlength="9" minlength="9"
+                            required>
+                    </div>
+                    <div class="my-05 flex flex-direction-row align-items-center">
+                        <input type="checkbox" id="autorizacao" name="autorizacao" value="autorizado" checked>
+                        <label for="autorizacao" class="ml-05">Concordo em receber comunicações e ofertas personalizadas.</label>
+                    </div>
+                    <div class="flex justify-center align-items-center">
+                        <button type="submit" class="button">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+            <section class="flex justify-space-evenly">
+                <button id="voltarPasso1" class="button">Voltar</button>
+                <button id="pularPasso3" class="button">Pular para o resultado</button>
+            </section>
+        </div>
+
+        <div id="passo-3" class="my-2 secao ocultaSecao">
+            <!-- Conteúdo do terceiro passo (tabela de resultado) -->
+            <section class="textoIntro">
+                <p class="mg-0">Confira a lista para o seu churrasco!</p>
+            </section>
+
+            <div id="informacoesChurrasco">
+                <div class="flex justify-center align-items-center">
+                    <p id="totalConvidados">Total de convidados: <span></span></p>
+                </div>
+                <div class="flex justify-center align-items-center">
+                    <p id="quantidadeHomens" class="mg-0">Homens: <span></span></p>
+                    <p id="quantidadeMulheres" class="mx-2 my-0">Mulheres: <span></span></p>
+                    <p id="quantidadeCriancas" class="mg-0">Crianças: <span></span></p>
+                </div>
+
+            </div>
+            <div class="mt-2">
+                <section class="flex justify-center align-items-center">
+                    <table class="pd-2">
+                        <thead>
+                            <tr>
+                                <th class="pr-2 pb-1">Item</th>
+                                <th class="pb-1">Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pr-2 pb-05">Carne</td>
+                                <td id="totalCarne" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Pão de Alho</td>
+                                <td id="paoDeAlho" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Carvão</td>
+                                <td id="carvao" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Sal</td>
+                                <td id="sal" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Gelo</td>
+                                <td id="gelo" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Refrigerante</td>
+                                <td id="refrigerante" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Água</td>
+                                <td id="agua" class="pb-05"></td>
+                            </tr>
+                            <tr>
+                                <td class="pr-2 pb-05">Cerveja</td>
+                                <td id="cerveja" class="pb-05"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="flex justify-center align-items-center my-2">
+                    <button id="novoCalculo" class="button">Novo Cálculo</button>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="mt-4">© Andrezza Abreu 2024</footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

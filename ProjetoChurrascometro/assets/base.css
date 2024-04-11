@@ -1,0 +1,66 @@
+.dark-theme {
+    background-color: var(--color-primary);
+    font: white;
+}
+
+.light-theme {
+    color: var(--color-black);
+}
+
+h1 {
+    color: var(--color-secondary);
+    text-align: center;
+    font-size: 55px;
+}
+
+.dark-theme main p {
+    color: var(--color-tertiary);
+    text-align: center;
+}
+
+.light-theme main p {
+    color: var(--color-black);
+    text-align: center;
+}
+
+section p {
+    color: var(--color-black);
+}
+
+.button {
+    background-color: var(--color-secondary);
+    padding: .8rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button:hover {
+    box-shadow: 2px 2px #0000004b;
+}
+
+/* Retirar decoração do link após o click */
+a:-webkit-any-link {
+    color: var(--color-black);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+th {
+    text-align: left;
+}
+
+.textoIntro {
+    text-align: center;
+}
+
+.ocultaSecao {
+    display: none;
+}
+
+table {
+    background-color: var(--color-tertiary);
+    border-radius: 1rem;
+    border: solid var(--color-black);
+}
+
